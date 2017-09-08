@@ -13,9 +13,7 @@ var answer;
 
 function main() {
 	fibonacciSequence = generateSequence();
-	console.log("generated Fibonacci Sequence: " + fibonacciSequence)
 	fibonacciEvenSequence = generateEvenSequece();
-	console.log("even sequence: " + fibonacciEvenSequence)
 	answer = sumArray(fibonacciEvenSequence)
 	console.log('answer: ' + answer)
 
@@ -58,3 +56,5 @@ function sumArray(array) {
 
 
 main();
+
+console.log("solution: 4613732")
