@@ -14,14 +14,13 @@ var answer;
 function main() {
 	fibonacciSequence = generateSequence();
 	fibonacciEvenSequence = generateEvenSequece();
-	answer = sumArray(fibonacciEvenSequence)
-	console.log('answer: ' + answer)
-
+	answer = sumArray(fibonacciEvenSequence);
+	console.log('answer: ' + answer);
 }
 
 function generateSequence() {
 	sequence = [1,2];
-	generateNumber = 2
+	generateNumber = 2;
 	do {
 		evaluateNumber = (sequence[generateNumber - 1]+sequence[generateNumber -2])
 		sequence.push(evaluateNumber);
@@ -35,7 +34,7 @@ function generateEvenSequece() {
 	sequence = [];
 	for (i = 0; i < (arrayLength -1); i ++) {
 		if (checkEven(fibonacciSequence[i]) === true) {
-			sequence.push(fibonacciSequence[i])
+			sequence.push(fibonacciSequence[i]);
 		};
 	};
 	return sequence;

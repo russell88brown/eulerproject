@@ -10,7 +10,7 @@ var palindromeArray = [];
 function main() {
 	generateProductsArray();
 	generatePalindromeArray();
-	return getMaxOfArray(palindromeArray)
+	return getMaxOfArray(palindromeArra);
 };
 
 function generateProductsArray() {for (i = 100; i < 1000; i++) {for (ii = 100; ii  < 1000; ii++){productsArray.push(i*ii);};};};
@@ -30,4 +30,4 @@ function checkPalindrome(array) {
 
 function getMaxOfArray(numArray) {return Math.max.apply(null, numArray);};
 
-console.log(main())
+console.log(main()) 

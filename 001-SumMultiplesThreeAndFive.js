@@ -14,9 +14,9 @@ function main() {
 
 function getCheckStoreNumbers() {
 	for (var i = 0; i < 999; i++) {
-		testNumber = i + 1
-		p = 0
-		q =0
+		testNumber = i + 1;
+		p = 0;
+		q =0;
 		console.log("********** start new numner")
 		console.log("i: " + testNumber)
 		if (isMultipleOfThree(testNumber) === true) {p = 1; console.log("3: true")} else {console.log("3: false")}; 
