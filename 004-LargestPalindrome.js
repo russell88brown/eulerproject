@@ -10,7 +10,7 @@ var palindromeArray = [];
 function main() {
 	generateProductsArray();
 	generatePalindromeArray();
-	return getMaxOfArray(palindromeArra);
+	return getMaxOfArray(palindromeArray);
 };
 
 function generateProductsArray() {for (i = 100; i < 1000; i++) {for (ii = 100; ii  < 1000; ii++){productsArray.push(i*ii);};};};
