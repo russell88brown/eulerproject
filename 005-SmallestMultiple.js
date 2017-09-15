@@ -22,7 +22,7 @@ function iternateDenominators(num) {
 	for (i = min; i < (max+1); i++) {
 		if (noRemainder(num,i) === false) {return false}
 		};
-	return true
+	return true 
 };
 
 function noRemainder(numerator,denominator){if ((numerator/denominator) === Math.floor(numerator/denominator)) {return true} else {return false};};
