@@ -9,6 +9,7 @@ Find the product abc.
 https://projecteuler.net/problem=9
 */
 
+//*
 function main() {
 	var a = 0, b = 0, c = 0;
 
@@ -20,23 +21,22 @@ function main() {
 					console.log("a: " + a + " > " + "b: " + b + " > " + "c: " + c)
 					console.log("answer: " + a*b*c);
 					return
-					}; // check for 1000
-			}; // check for whole number
-		}; // end of second for loop
-	}; // end of first for loop
+				};
+			};
+		};
+	};
 	console.log("error - range too small");
-}; // end of function
+};
 	
 main();
+//*/
 
-/*
-full iteration does not work
-
+/* 
+First attempt
 function main() {
-	for (a = 1; a < 334; a++){
-		for (b = 2; b < 334; b++){
-			for (c = 3; c < 334; c++){
-				console.log(a + ":" + b + ":" + c);
+	for (a = 1; a < 500; a++){
+		for (b = 2; b < 500; b++){
+			for (c = 3; c < 500; c++){
 				if ((Math.pow(a,2) + Math.pow(b,2)) === Math.pow(c,2)) {
 					if ((a+b+c) === 1000) {
 						console.log("a: " + a + "b: " + b + "c: " + c)
