@@ -39,7 +39,7 @@ function main(digits,number) {
 	}
 	startPosition = productsArray.indexOf(Math.max.apply(null, productsArray))
 	for (i = startPosition; i < digits+startPosition; i++) {answer = answer.concat(numberArray[i])}
-	
+
 	console.log("Greatest Product: " + Math.max.apply(null, productsArray))
 	console.log("Consecutive Digits: " + answer)
 }
